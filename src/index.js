@@ -1,5 +1,10 @@
-const template = document.createElement('template');
-template.innerHTML = `
-  <h1>TITLE THING</h1>
-  <p>destroy all humans</p>
-`;
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/app';
+
+const element = <h1>React!!</h1>;
+
+render(
+  <App />,
+  document.getElementById('root')
+);

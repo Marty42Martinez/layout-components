@@ -3,22 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "scripts": {
-    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch",
     "build": "webpack -p --devtool source-map",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marty42Martinez/layout-components.git"
+    "url": "git+https://github.com/mehtaphysical/layout-components.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marty42Martinez/layout-components/issues"
+    "url": "https://github.com/mehtaphysical/layout-components/issues"
   },
-  "homepage": "https://github.com/Marty42Martinez/layout-components#readme",
+  "homepage": "https://github.com/mehtaphysical/layout-components#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",

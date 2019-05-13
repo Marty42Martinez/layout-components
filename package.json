@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server --hot --mode development",
+    "build": "webpack -p --devtool source-map",
+    "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

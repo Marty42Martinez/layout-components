@@ -10,10 +10,12 @@
     "jest": true
   },
   "plugins": [
-    "babel"
+    "babel",
+    "react"
   ],
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
     "no-console": "warn",

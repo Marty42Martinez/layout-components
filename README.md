@@ -19,6 +19,14 @@
 * `npm i -D html-webpack-plugin clean-webpack-plugin`
 * `npm i -D jest identity-obj-proxy`
 
+## React Dependencies
+
+    npm i react react-dom
+    npm i -D @babel/preset-react @babel/plugin-proposal-class-properties eslint-plugin-react enzyme enzyme-adapter-react-16 enzyme-to-json
+    npm i -D eslint-plugin-react
+    npm i -D enzyme enzyme-adapter-react-16 enzyme-to-json
+
+
 ## Single Page Apps
 
 Single Page Apps (SPAs) have one HTML file with very little content. Most of

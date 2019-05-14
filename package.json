@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
     "build": "webpack -p --devtool source-map",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
